@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Carousel Image </title>
+</head>
+<body>
+    <h1 style="display: flex; justify-content: center; align-items: center; font-family: Arial, Helvetica, sans-serif; color: teal;">Carousel Image 5th Task</h1>
+
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="1.jpg" alt="Image 1" class="carousel-image">
+            <img src="2.jpg" alt="Image 2" class="carousel-image">
+            <img src="3.jpg" alt="Image 3" class="carousel-image">
+        </div>
+        <button class="prev-btn">&#10094;</button>
+        <button class="next-btn">&#10095;</button>
+        <div class="carousel-indicators">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

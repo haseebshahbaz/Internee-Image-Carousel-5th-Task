@@ -1,0 +1,71 @@
+.carousel-container {
+    position: relative;
+    max-width: 80%; /* Smaller width */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%; /* Set the full width of the carousel slide */
+}
+
+.carousel-image {
+    width: 100%; /* Ensure each image takes up the full width of the container */
+    height: 470px; /* Adjust height as needed */
+    object-fit: cover;
+    flex: 0 0 100%; /* Force each image to take 100% of the container width */
+}
+
+.carousel-indicators {
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-image {
+        height: 250px; /* Adjust height for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-image {
+        height: 200px; /* Adjust height for mobile */
+    }
+}
